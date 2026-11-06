@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#101820">
+  <title>Masr Racer | سباق مصر</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <section id="introScreen" aria-label="شاشة بداية اللعبة">
+    <div class="intro-card">
+      <div class="intro-flag">🇪🇬</div>
+      <div class="intro-title">MASR <b>RACER</b></div>
+      <div class="intro-subtitle">سباق شوارع مصر</div>
+      <div class="intro-credit">تطوير <strong>LoaiAbdElhay</strong></div>
+      <button id="startBtn">ابدأ السباق</button>
+      <div class="intro-hint">اضغط للانطلاق</div>
+    </div>
+  </section>
+  <div id="hud">
+    <div class="brand">MASR <b>RACER</b><small>سباق شوارع مصر</small></div>
+    <div class="stats"><span>السرعة <b id="speed">0</b> كم/س</span><span id="connection">وضع فردي</span></div>
+    <div class="actions">
+      <button id="cameraBtn">تغيير الكاميرا</button>
+      <button id="multiBtn">اتصال لاعب تاني</button>
+    </div>
+  </div>
+  <div id="help">W / ↑ تسارع · S / ↓ فرامل · A D / ← → توجيه · C تغيير الكاميرا</div>
+  <div id="mobileControls">
+    <div class="steer"><button data-key="ArrowLeft">◀</button><button data-key="ArrowRight">▶</button></div>
+    <div class="pedals"><button data-key="ArrowUp">▲</button><button data-key="ArrowDown">▼</button></div>
+  </div>
+  <div id="toast">جاري تجهيز شوارع القاهرة...</div>
+  <script type="module" src="/game.js"></script>
+</body>
+</html>
